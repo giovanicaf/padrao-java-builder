@@ -3,15 +3,13 @@ package io.github.giovanicaf;
 public class TestePessoa {
 
     public static void main(String[] args) {
-	// write your code here
-        //Pessoa p = new Pessoa("Willian", "Queiroz", "Suane", "JirayaBolado", "Willian");
-        Pessoa p = new Pessoa.PessoaBuild()
+        Pessoa p = new Pessoa.PessoaBuilder()
                 .nome("Willian")
                 .ultimonome("Queiroz")
                 .nomeDoMeio("Suares")
                 .apelido("JirayaBolado")
                 .nomeDoPai("Willian")
-                .criarPessoa();
+                .build();
 
         System.out.println(p);
     }

@@ -15,39 +15,39 @@ public class Pessoa {
         this.nomeDoPai = nomeDoPai;
     }
 
-    public static class PessoaBuild{
+    public static class PessoaBuilder{
         private String nome;
         private String ultimonome;
         private String nomeDoMeio;
         private String apelido;
         private String nomeDoPai;
 
-        public PessoaBuild nome(String nome){
+        public PessoaBuilder nome(String nome){
             this.nome = nome;
             return this;
         }
 
-        public PessoaBuild ultimonome(String ultimonome){
+        public PessoaBuilder ultimonome(String ultimonome){
             this.ultimonome = ultimonome;
             return this;
         }
 
-        public PessoaBuild nomeDoMeio(String nomeDoMeio){
+        public PessoaBuilder nomeDoMeio(String nomeDoMeio){
             this.nomeDoMeio = nomeDoMeio;
             return this;
         }
 
-        public PessoaBuild apelido(String apelido){
+        public PessoaBuilder apelido(String apelido){
             this.apelido = apelido;
             return this;
         }
 
-        public PessoaBuild nomeDoPai(String nomeDoPai){
+        public PessoaBuilder nomeDoPai(String nomeDoPai){
             this.nomeDoPai = nomeDoPai;
             return this;
         }
 
-        public Pessoa criarPessoa(){
+        public Pessoa build(){
             return new Pessoa(nome, ultimonome, nomeDoMeio, apelido, nomeDoPai);
         }
 
